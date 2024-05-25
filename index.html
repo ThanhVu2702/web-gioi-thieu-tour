@@ -201,7 +201,44 @@
 </div>
 <div class="about-row">
   <h3>Lịch trình</h3>
-  
+  <style>
+    .about-row {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .about-row h3 {
+      color: #333;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .about-row h3:hover {
+      color: #ff5733;
+    }
+    .about-row p {
+      color: #666;
+    }
+    .about-row ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .about-row ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    .about-row ul li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #ff5733;
+    }
+    .about-row ul li:hover {
+      color: #ff5733;
+    }
+  </style>
   <h4>Ngày 1:</h4>
   <ul>
     <li>07:00: Tập trung tại sân bay Nội Bài, làm thủ tục lên máy bay.</li>
