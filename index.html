@@ -138,8 +138,110 @@
 </section>
 
  <section id="amenties">
-<h1>Các Dịch Vụ Giải Trí</h1>
-<hr>
+  <div class="entertainment-wrapper">
+    <h1>
+      <span class="letter">C</span><span class="letter">á</span><span class="letter">c</span> 
+      <span class="letter">D</span><span class="letter">ị</span><span class="letter">c</span><span class="letter">h</span> 
+      <span class="letter">V</span><span class="letter">ụ</span> 
+      <span class="letter">G</span><span class="letter">i</span><span class="letter">ả</span><span class="letter">i</span> 
+      <span class="letter">T</span><span class="letter">r</span><span class="letter">í</span>
+    </h1>
+    <hr>
+  </div>
+  
+  <style>
+  @keyframes colorBlink {
+    0% {
+      color: #ffd700;
+    }
+    25% {
+      color: #ff5733;
+    }
+    50% {
+      color: #33ff57;
+    }
+    75% {
+      color: #3357ff;
+    }
+    100% {
+      color: #ffd700;
+    }
+  }
+  
+  .entertainment-wrapper {
+    display: inline-block;
+    padding: 20px;
+    border: 4px solid #ffd700;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .entertainment-wrapper h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .entertainment-wrapper hr {
+    border: none;
+    height: 1px;
+    background: #333;
+    margin-top: 10px;
+  }
+  
+  .letter {
+    display: inline-block;
+    animation: colorBlink 3s infinite;
+  }
+  </style>
+  <style>
+    @keyframes borderBlink {
+      0% {
+        border-color: #6600ff;
+      }
+      25% {
+        border-color: #ff5733;
+      }
+      50% {
+        border-color: #2293ad;
+      }
+      75% {
+        border-color: #33ff74;
+      }
+      100% {
+        border-color: #ffd700;
+      }
+    }
+    
+    .entertainment-wrapper {
+      display: inline-block;
+      padding: 20px;
+      border: 4px solid #ffd700;
+      border-radius: 10px;
+      animation: borderBlink 3s infinite;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .entertainment-wrapper h1 {
+      margin: 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+    
+    .entertainment-wrapper hr {
+      border: none;
+      height: 1px;
+      background: #333;
+      margin-top: 10px;
+    }
+    </style>  
+  
 <h3>TOUR MÙA HÈ TUYỆT VỜI MÀ NSA GROUP MUỐN MANG LẠI CHO TOÀN BỘ NHÂN VIÊN CÔNG TY</h3>
 <h5>Chuyến đi này có đủ mọi thứ để bạn có thể thư giãn và tận hưởng mọi khoảnh khắc</h5>
 <br>
@@ -193,123 +295,313 @@
 <section id="about">
   <h1>Thông tin chuyến đi</h1>
 <hr>
-<div class="about-row">
+<div class="about-row1">
   <h3>Tour du lịch hè của NSA Group - Hành trình TPHCM - Huế - Hội An (6 ngày 5 đêm)</h3>
-  <p><strong>Ngày khởi hành:</strong> 15/06/2024</p>
+  <p><strong>Ngày khởi hành:</strong> 15/07/2024</p>
   <p><strong>Phương tiện:</strong> Máy bay</p>
   <p><strong>Tour trị giá:</strong> 12.900.000 VNĐ/người</p>
 </div>
+
+<style>
+@keyframes borderBlink {
+  0% {
+    border-color: #aff707;
+  }
+  25% {
+    border-color: #e6ee09;
+  }
+  50% {
+    border-color: #33ff57;
+  }
+  75% {
+    border-color: #3357ff;
+  }
+  100% {
+    border-color: #05fabd;
+  }
+}
+
+.about-row1 {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  border: 4px solid #ffd700;
+  animation: borderBlink 3s infinite;
+}
+
+.about-row1 h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.about-row1 p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.about-row1 p strong {
+  color: #0b464e;
+  color:#0b464e
+}
+</style>
+
+
 <div class="about-row">
-  <h3>Lịch trình</h3>
-  <style>
-    .about-row {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    .about-row h3 {
-      color: #333;
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
-    .about-row h3:hover {
-      color: #ff5733;
-    }
-    .about-row p {
-      color: #666;
-    }
-    .about-row ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .about-row ul li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 5px;
-      cursor: pointer;
-    }
-    .about-row ul li::before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      color: #ff5733;
-    }
-    .about-row ul li:hover {
-      color: #ff5733;
-    }
-  </style>
-  <h4>Ngày 1:</h4>
-  <ul>
-    <li>07:00: Tập trung tại sân bay Nội Bài, làm thủ tục lên máy bay.</li>
-    <li>08:00: Khởi hành bay đến Huế.</li>
-    <li>10:00: Đến Huế, xe đưa đoàn về khách sạn nhận phòng, nghỉ ngơi.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tham quan Đại Nội - Hoàng thành Huế, lăng Khải Định.</li>
-    <li>18:00: Ăn tối tại nhà hàng.</li>
-    <li>19:00: Tự do dạo chơi, khám phá Huế về đêm.</li>
-  </ul>
-  
-  <h4>Ngày 2:</h4>
-  <ul>
-    <li>07:00: Ăn sáng tại khách sạn.</li>
-    <li>08:00: Tham quan chùa Thiên Mụ, làng nghề làm nón bài thơ, sông Hương.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tham quan lăng Tự Đức, lăng Minh Mạng.</li>
-    <li>18:00: Ăn tối tại nhà hàng.</li>
-    <li>19:00: Tự do tham gia chương trình ca Huế trên sông Hương (chi phí tự túc).</li>
-  </ul>
+  <button id="itinerary-button">Lịch trình</button>
+  <div id="itinerary-buttons" style="display:none;">
+    <button class="day-button" data-day="1" onclick="changeTextColor(this)">Ngày 1</button>
+    <button class="day-button" data-day="2" onclick="changeTextColor(this)">Ngày 2</button>
+    <button class="day-button" data-day="3" onclick="changeTextColor(this)">Ngày 3</button>
+    <button class="day-button" data-day="4" onclick="changeTextColor(this)">Ngày 4</button>
+    <button class="day-button" data-day="5" onclick="changeTextColor(this)">Ngày 5</button>
+    <button class="day-button" data-day="6" onclick="changeTextColor(this)">Ngày 6</button>
+    <script>
+        var previousButton = null; // Biến để lưu trữ button trước đó
 
-  <h4>Ngày 3:</h4>
-  <ul>
-    <li>07:00: Ăn sáng tại khách sạn.</li>
-    <li>08:00: Di chuyển đến Hội An (bằng xe ô tô).</li>
-    <li>11:00: Đến Hội An, nhận phòng khách sạn.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tham quan phố cổ Hội An, chùa Cầu, nhà cổ Tấn Ký, xưởng thủ công truyền thống.</li>
-    <li>18:00: Ăn tối tại nhà hàng.</li>
-    <li>19:00: Tự do dạo chơi, mua sắm, thưởng thức các món ăn đặc sản Hội An.</li>
-  </ul>
-
-  <h4>Ngày 4:</h4>
-  <ul>
-    <li>07:00: Ăn sáng tại khách sạn.</li>
-    <li>08:00: Tham quan biển Cửa Đại, làng rau Trà Quế.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tự do tham gia các hoạt động vui chơi giải trí tại biển Cửa Đại (chi phí tự túc).</li>
-    <li>18:00: Ăn tối tại nhà hàng.</li>
-    <li>19:00: Tham gia chương trình thả đèn hoa đăng trên sông Hoài (chi phí tự túc).</li>
-  </ul>
-
-  <h4>Ngày 5:</h4>
-  <ul>
-    <li>07:00: Ăn sáng tại khách sạn.</li>
-    <li>08:00: Di chuyển về Hà Nội (bằng máy bay).</li>
-    <li>10:00: Đến Hà Nội, nhận phòng khách sạn.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tham quan Văn Miếu Quốc Tử Giám, Hồ Hoàn Kiếm, Chùa Ngọc Sơn.</li>
-    <li>18:00: Ăn tối tại nhà hàng.</li>
-    <li>19:00: Tự do khám phá Hà Nội về đêm.</li>
-  </ul>
-
-  <h4>Ngày 6:</h4>
-  <ul>
-    <li>07:00: Ăn sáng tại khách sạn.</li>
-    <li>08:00: Tham quan Lăng Chủ tịch Hồ Chí Minh, Bảo tàng Hồ Chí Minh.</li>
-    <li>12:00: Ăn trưa tại nhà hàng.</li>
-    <li>14:00: Tự do mua sắm, nghỉ ngơi.</li>
-    <li>18:00: Xe đưa đoàn ra sân bay Nội Bài, làm thủ tục lên máy bay.</li>
-    <li>20:00: Khởi hành về ga.</li>
-  </ul>
+        function changeTextColor(button) {
+            if (previousButton !== null) {
+                previousButton.style.color = 'black'; // Đặt màu chữ của button trước đó thành màu đen
+            }
+            button.style.color = 'green'; // Thay đổi màu chữ của button hiện tại thành màu xanh lá
+            previousButton = button; // Lưu trữ button hiện tại để sử dụng cho lần click tiếp theo
+        }
+    </script>
 </div>
-<div class="about-row">
+
+  
+  <div id="itinerary-details">
+    <div class="day-details" data-day="1" style="display:none;">
+      <h4>Ngày 1:</h4>
+      <table>
+        <tr><td>07:00</td><td>Tập trung tại công ty, xe đưa đón sẽ đưa đến sân bay Tân Sơn Nhất, làm thủ tục lên máy bay.</td></tr>
+        <tr><td>08:00</td><td>Khởi hành bay đến Huế.</td></tr>
+        <tr><td>10:00</td><td>Đến Huế, xe đưa đoàn về khách sạn nhận phòng, nghỉ ngơi.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tham quan Đại Nội - Hoàng thành Huế, lăng Khải Định.</td></tr>
+        <tr><td>18:00</td><td>Ăn tối tại nhà hàng.</td></tr>
+        <tr><td>19:00</td><td>Tự do dạo chơi, khám phá Huế về đêm.</td></tr>
+      </table>
+    </div>
+    <div class="day-details" data-day="2" style="display:none;">
+      <h4>Ngày 2:</h4>
+      <table>
+        <tr><td>07:00</td><td>Ăn sáng tại khách sạn.</td></tr>
+        <tr><td>08:00</td><td>Tham quan chùa Thiên Mụ, làng nghề làm nón bài thơ, sông Hương.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tham quan lăng Tự Đức, lăng Minh Mạng.</td></tr>
+        <tr><td>18:00</td><td>Ăn tối tại nhà hàng.</td></tr>
+        <tr><td>19:00</td><td>Tự do tham gia chương trình ca Huế trên sông Hương (chi phí tự túc).</td></tr>
+      </table>
+    </div>
+    <div class="day-details" data-day="3" style="display:none;">
+      <h4>Ngày 3:</h4>
+      <table>
+        <tr><td>07:00</td><td>Ăn sáng tại khách sạn.</td></tr>
+        <tr><td>08:00</td><td>Di chuyển đến Hội An (bằng xe ô tô).</td></tr>
+        <tr><td>11:00</td><td>Đến Hội An, nhận phòng khách sạn.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tham quan phố cổ Hội An, chùa Cầu, nhà cổ Tấn Ký, xưởng thủ công truyền thống.</td></tr>
+        <tr><td>18:00</td><td>Ăn tối tại nhà hàng.</td></tr>
+        <tr><td>19:00</td><td>Tự do dạo chơi, mua sắm, thưởng thức các món ăn đặc sản Hội An.</td></tr>
+      </table>
+    </div>
+    <div class="day-details" data-day="4" style="display:none;">
+      <h4>Ngày 4:</h4>
+      <table>
+        <tr><td>07:00</td><td>Ăn sáng tại khách sạn.</td></tr>
+        <tr><td>08:00</td><td>Tham quan biển Cửa Đại, làng rau Trà Quế.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tự do tham gia các hoạt động vui chơi giải trí tại biển Cửa Đại (chi phí tự túc).</td></tr>
+        <tr><td>18:00</td><td>Ăn tối tại nhà hàng.</td></tr>
+        <tr><td>19:00</td><td>Tham gia chương trình thả đèn hoa đăng trên sông Hoài (chi phí tự túc).</td></tr>
+      </table>
+    </div>
+    <div class="day-details" data-day="5" style="display:none;">
+      <h4>Ngày 5:</h4>
+      <table>
+        <tr><td>07:00</td><td>Ăn sáng tại khách sạn.</td></tr>
+        <tr><td>08:00</td><td>Di chuyển về Hà Nội (bằng máy bay).</td></tr>
+        <tr><td>10:00</td><td>Đến Hà Nội, nhận phòng khách sạn.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tham quan Văn Miếu Quốc Tử Giám, Hồ Hoàn Kiếm, Chùa Ngọc Sơn.</td></tr>
+        <tr><td>18:00</td><td>Ăn tối tại nhà hàng.</td></tr>
+        <tr><td>19:00</td><td>Tự do khám phá Hà Nội về đêm.</td></tr>
+      </table>
+    </div>
+    <div class="day-details" data-day="6" style="display:none;">
+      <h4>Ngày 6:</h4>
+      <table>
+        <tr><td>07:00</td><td>Ăn sáng tại khách sạn.</td></tr>
+        <tr><td>08:00</td><td>Tham quan Lăng Chủ tịch Hồ Chí Minh, Bảo tàng Hồ Chí Minh.</td></tr>
+        <tr><td>12:00</td><td>Ăn trưa tại nhà hàng.</td></tr>
+        <tr><td>14:00</td><td>Tự do mua sắm, nghỉ ngơi.</td></tr>
+        <tr><td>18:00</td><td>Xe đưa đoàn ra sân bay Nội Bài, làm thủ tục lên máy bay.</td></tr>
+        <tr><td>20:00</td><td>Khởi hành về công ty.</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+.about-row {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-row h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.about-row p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.about-row p strong {
+  color: #ffd700;
+}
+
+#itinerary-button, .day-button {
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#itinerary-button:hover, .day-button:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+#itinerary-details {
+  margin-top: 20px;
+}
+
+.day-details {
+  text-align: left;
+}
+
+.day-details h4 {
+  color: #09f69f;
+  margin-bottom: 10px;
+}
+
+.day-details table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.day-details table, .day-details td {
+  border: 1px solid #fff;
+}
+
+.day-details td {
+  padding: 8px;
+  text-align: left;
+}
+</style>
+
+<script>
+document.getElementById('itinerary-button').addEventListener('click', function() {
+  var itineraryButtons = document.getElementById('itinerary-buttons');
+  if (itineraryButtons.style.display === 'none') {
+    itineraryButtons.style.display = 'block';
+  } else {
+    itineraryButtons.style.display = 'none';
+    var dayDetails = document.querySelectorAll('.day-details');
+    dayDetails.forEach(function(details) {
+      details.style.display = 'none';
+    });
+  }
+});
+
+var dayButtons = document.querySelectorAll('.day-button');
+dayButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var day = this.getAttribute('data-day');
+    var dayDetails = document.querySelectorAll('.day-details');
+    dayDetails.forEach(function(details) {
+      details.style.display = details.getAttribute('data-day') === day ? 'block' : 'none';
+    });
+  });
+});
+</script>
+
+<div class="about-row2">
   <h3>Lưu ý:</h3>
   <ul>
     <li>Lịch trình có thể thay đổi theo điều kiện thời tiết và tình hình thực tế.</li>
-    <li>Các dịch vụ trải nghiệm đã bao gồm vé máy bay khứ hồi, khách sạn, ăn uống, phí tham quan, hướng dẫn viên, xe vận chuyển.</li>
+    <li>Các dịch vụ trải nghiệm tour đã bao gồm vé máy bay khứ hồi, khách sạn, ăn uống, phí tham quan, hướng dẫn viên, xe vận chuyển.</li>
     <li>Nhân viên tự túc các chi phí phát sinh ngoài chương trình như: mua sắm, vui chơi giải trí, đồ uống, tip cho hướng dẫn viên, tài xế...</li>
   </ul>
 </div>
+
+<style>
+.about-row2 {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  border-left: 5px solid #ff5733;
+}
+
+.about-row2 h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ff5733;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-row2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-row2 ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #666;
+}
+
+.about-row2 ul li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #ff5733;
+  font-size: 20px;
+  line-height: 18px;
+}
+</style>
+
 </section>
 <section id="contact">
   <h3>CÔNG TY TNHH CÔNG NGHỆ PHẦN MỀM NGỌC SƠN ANH</h3>
