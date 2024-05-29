@@ -102,9 +102,45 @@
 	      <img class="rooms-image" src="img/h9.jpg" alt="p1" height="200px" width="300px">
           </div>
           <div class="card-body">
-	     <h2>Phòng tiêu chuẩn</h2>
-		 <p>Phòng tiêu chuẩn là lựa chọn thuận tiện và tiết kiệm cho du khách với các tiện nghi cơ bản và không gian thoải mái.</p>
-          </div>
+            <button onclick="showStandardRoom()" class="flash oval-button">Phòng tiêu chuẩn</button>
+            <p id="standard-room-description" style="display: none;">Phòng tiêu chuẩn là lựa chọn thuận tiện và tiết kiệm cho du khách với các tiện nghi cơ bản và không gian thoải mái.</p>
+        </div>
+        
+        <style>
+        /* CSS để tạo button có hình bầu dục */
+        .oval-button {
+            border-radius: 20px; /* Điều chỉnh border-radius để tạo hình dạng bầu dục */
+            padding: 10px 20px; /* Điều chỉnh padding để tạo kích thước của button */
+            background-color: #007bff; /* Màu nền của button */
+            color: #d71e11; /* Màu chữ của button */
+            border: none; /* Loại bỏ viền của button */
+            cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua button */
+            transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu nền khi hover */
+        }
+        
+        /* CSS để hiệu ứng nhấp nháy màu */
+        @keyframes flash {
+            0% { background-color: #fff; }
+            50% { background-color: yellow; }
+            100% { background-color: #fff; }
+        }
+        
+        .flash {
+            animation: flash 1s infinite;
+        }
+        </style>
+        
+        <script>
+        function showStandardRoom() {
+            var description = document.getElementById("standard-room-description");
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+        </script>
+        
         </div>
       </div>
 
@@ -115,9 +151,49 @@
 	      <img class="rooms-image" src="img/h8.jpg" alt="p1" height="200px" width="300px">
           </div>
           <div class="card-body">
-	     <h2>Phòng gia đình</h2>
-		 <p>Phòng gia đình cung cấp không gian lưu trú thoải mái và tiện ích cho cả gia đình với nhiều giường và tiện nghi phòng tắm.</p>
-          </div>
+            <button onclick="showFamilyRoom()" class="flash border-flash oval-button">Phòng gia đình</button>
+            <p id="family-room-description" style="display: none;">Phòng gia đình cung cấp không gian lưu trú thoải mái và tiện ích cho cả gia đình với nhiều giường và tiện nghi phòng tắm.</p>
+        </div>
+        
+        <style>
+        /* CSS để tạo button có hình bầu dục và hiệu ứng nhấp nháy màu viền */
+        .oval-button {
+            border-radius: 20px; /* Điều chỉnh border-radius để tạo hình dạng bầu dục */
+            padding: 10px 20px; /* Điều chỉnh padding để tạo kích thước của button */
+            background-color: #007bff; /* Màu nền của button */
+            color: #fff; /* Màu chữ của button */
+            border: 2px solid transparent; /* Độ dày và màu sắc của viền button */
+            cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua button */
+            transition: border-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu viền khi hover */
+        }
+        
+        .oval-button:hover {
+            border-color: #007bff; /* Màu viền button khi hover */
+        }
+        
+        /* CSS để hiệu ứng nhấp nháy màu viền */
+        @keyframes flash {
+            0% { border-color: transparent; }
+            50% { border-color: rgb(255, 17, 0); }
+            100% { border-color: transparent; }
+        }
+        
+        .border-flash {
+            animation: flash 1s infinite;
+        }
+        </style>
+        
+        <script>
+        function showFamilyRoom() {
+            var description = document.getElementById("family-room-description");
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+        </script>
+        
         </div>
       </div>
 	  
@@ -128,9 +204,49 @@
 	      <img class="rooms-image" src="img/h3.jpg" alt="p1" height="200px" width="300px">
           </div>
           <div class="card-body">
-	     <h2>Phòng đơn</h2>
-		 <p>Phòng đơn là lựa chọn phổ biến cho du khách cá nhân với không gian thoải mái và tiện nghi cơ bản.</p>
-          </div>
+            <button onclick="showSingleRoom()" class="flash border-flash oval-button">Phòng đơn</button>
+            <p id="single-room-description" style="display: none;">Phòng đơn là lựa chọn phổ biến cho du khách cá nhân với không gian thoải mái và tiện nghi cơ bản.</p>
+        </div>
+        
+        <style>
+        /* CSS để hiệu ứng nhấp nháy màu viền */
+        @keyframes flash {
+            0% { border-color: transparent; }
+            50% { border-color: rgb(250, 41, 5); }
+            100% { border-color: transparent; }
+        }
+        
+        .border-flash {
+            animation: flash 1s infinite;
+        }
+        
+        /* CSS để tạo button có hình bầu dục */
+        .oval-button {
+            border-radius: 20px; /* Điều chỉnh border-radius để tạo hình dạng bầu dục */
+            padding: 10px 20px; /* Điều chỉnh padding để tạo kích thước của button */
+            background-color: #007bff; /* Màu nền của button */
+            color: #fff; /* Màu chữ của button */
+            border: 2px solid transparent; /* Độ dày và màu sắc của viền button */
+            cursor: pointer; /* Biến con trỏ thành hình bàn tay khi di chuột qua button */
+            transition: border-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu viền khi hover */
+        }
+        
+        .oval-button:hover {
+            border-color: #007bff; /* Màu viền button khi hover */
+        }
+        </style>
+        
+        <script>
+        function showSingleRoom() {
+            var description = document.getElementById("single-room-description");
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+        </script>
+        
         </div>
       </div>
 	  
@@ -170,7 +286,7 @@
   
   .entertainment-wrapper {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     border: 4px solid #ffd700;
     border-radius: 10px;
     margin: 0 auto;
@@ -189,7 +305,7 @@
     border: none;
     height: 1px;
     background: #333;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .letter {
@@ -218,7 +334,7 @@
     
     .entertainment-wrapper {
       display: inline-block;
-      padding: 20px;
+      padding: 10px;
       border: 4px solid #ffd700;
       border-radius: 10px;
       animation: borderBlink 3s infinite;
@@ -238,7 +354,7 @@
       border: none;
       height: 1px;
       background: #333;
-      margin-top: 10px;
+      margin-top: 5px;
     }
     </style>  
   
@@ -474,11 +590,11 @@
 }
 
 .about-row p strong {
-  color: #ffd700;
+  color: #650af8;
 }
 
 #itinerary-button, .day-button {
-  background-color: #ffd700;
+  background-color: #74c781;
   color: #333;
   border: none;
   border-radius: 5px;
@@ -628,12 +744,22 @@ dayButtons.forEach(function(button) {
 <!-- quảng cáo -->
 <div id="ads_right" style="text-align: center;">
   <div id="exitads">
-      <a href="#" onclick="hideads()">Tắt quảng cáo[❌]</a>
+      <a href="#" onclick="hideads(event)">Tắt quảng cáo[❌]</a>
   </div>
   <div id="content_ads">
       <a href="ads/ads1.html" target="_blank"><img src="img/cntt.jpg" width="1200px"></a>
   </div>
 </div>
+
+<script>
+  function hideads(event) {
+    // Ngăn chặn sự kiện mặc định của thẻ <a>
+    event.preventDefault();
+    
+    // Viết code để ẩn quảng cáo ở đây
+  }
+</script>
+
 </body>
 <!-- javascript -->
   <script src="assets/script.js"></script>
